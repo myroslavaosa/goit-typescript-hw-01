@@ -7,8 +7,8 @@ interface Details {
     title: string;
     likes: number;
     accounts: string[];
-    status: string;
-    details?: Details; // Необов'язкова властивість
+    status: 'open'|'close';
+    details?: Details;
   }
   
   const page1: Page = {
